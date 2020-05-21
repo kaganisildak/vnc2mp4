@@ -1,0 +1,5 @@
+opencv-python==4.2.0.34
+Pillow==6.2.0
+Twisted==19.7.0
+zope.interface==4.4.2
+vncdotool==1.0.0
