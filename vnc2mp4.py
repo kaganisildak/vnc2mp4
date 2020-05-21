@@ -1,9 +1,8 @@
-import sys, time, socket, os, os.path, subprocess, signal
+import sys, time, os, signal
 import numpy as np
 from PIL import Image, ImageDraw
 import cv2
 from vncdotool import api
-import time
 
 
 def record(output,host,fps,password=None):
