@@ -20,21 +20,19 @@ def record(output,host,fps,password=None):
         def sigint_handler(sig, frame):
             raise KeyboardInterrupt
         signal.signal(signal.SIGINT, sigint_handler)
-        count = 0
         try:
             while 1:
-                elapse = int()
-                start = time.time()
+                #elapse = int()
+                #start = time.time()
                 for i in range(0,frame):          
                     cli.refreshScreen(False)
                     imtemp = cli.screen.copy()
                     video.write(cv2.cvtColor(np.array(imtemp), cv2.COLOR_RGB2BGR))
-                stop = time.time()
-                elapse = stop-start
-                print("Frame Process : " + str(elapse))
+                #stop = time.time()
+                #elapse = stop-start
+                #print("Frame Process : " + str(elapse))
                 if elapse < 1:
                     time.sleep(1-elapse)
-                count +=1
         finally:
             p_stop = time.time()
             print(p_stop-p_start)
