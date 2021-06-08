@@ -1,5 +1,5 @@
 opencv-python==4.2.0.34
-Pillow==7.1.2
+Pillow==8.2.0
 Twisted==20.3.0
 zope.interface==4.4.2
 vncdotool==1.0.0
